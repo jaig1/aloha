@@ -115,7 +115,7 @@ public class AlohaVerticle extends AbstractVerticle {
                 List<String> greetings = new ArrayList<>();
                 greetings.add(aloha());
                 greetings.add(result);
-                resultHandler.handle(greetings);
+                resultHandler.handle(greetings);//1234
             });
     }
 
