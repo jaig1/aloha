@@ -42,7 +42,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 
 		<!-- other plugin versions -->
-		<openfeign.version>9.4.0</openfeign.version>
+		<openfeign.version>10.2.0</openfeign.version>
 		<version.opentracing>0.22.0</version.opentracing>
 		<openfeign.opentracing.version>0.0.3</openfeign.opentracing.version>
 		<vertx.version>3.3.3</vertx.version>
@@ -134,8 +134,7 @@
 						</goals>
 						<configuration>
 							<transformers>
-								<transformer
-									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 									<manifestEntries>
 										<Main-Class>${java.main.class}</Main-Class>
 										<Main-Verticle>${vertx.main.verticle}</Main-Verticle>
